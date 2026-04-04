@@ -1,10 +1,18 @@
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import { MainSection, RoleSection } from './components/MainSection';
 
 function App() {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <Navbar />
-      <main className="p-6 text-xl">Your main content here...</main>
+      <div className="h-[2px]" />
+      <main className="flex-grow">
+        <MainSection />
+        <RoleSection />
+        {/* Your main content here */}
+      </main>
+      <Footer />
     </div>
   );
 }
